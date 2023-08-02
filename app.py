@@ -26,7 +26,6 @@ st.set_page_config(
 
 
 with st.sidebar:
-    st.header("Animation parameters")
     speed = st.slider("Select speed", 0.1, 2.0, 1.0)
     reverse = st.checkbox("Reverse direction", False)
 st.lottie(lottie_streamlit, speed=speed, reverse=reverse, height=400, key="initial")
