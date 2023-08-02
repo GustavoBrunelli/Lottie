@@ -40,10 +40,3 @@ with st.sidebar:
         '<div style="margin-top: 0.75em;"><a href="https://www.buymeacoffee.com/andfanilo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></div>',
         unsafe_allow_html=True,
     )
-
-c_col1, colx, c_col2, coly = st.columns((1, 0.1, 0.25, 1))
-if c_col1.button("Run some heavy computation...for 5 seconds!"):
-    with c_col2.empty():
-        with st_lottie_spinner(lottie_progress, loop=True, key="progress"):
-            time.sleep(5)
-        st_lottie(lottie_success_url, loop=False, key="success")
