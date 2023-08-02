@@ -16,8 +16,6 @@ def load_lottieurl(url: str):
     return r.json()
 
 lottie_streamlit = load_lottiefile("./Streamlit Logo Animation.json")
-lottie_progress_url = "https://assets5.lottiefiles.com/private_files/lf30_3ykigvxc.json"
-lottie_progress = load_lottieurl(lottie_progress_url)
 
 with st.sidebar:
     speed = st.slider("Select speed", 0.1, 2.0, 1.0)
