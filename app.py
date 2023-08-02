@@ -19,7 +19,7 @@ def load_lottieurl(url: str):
     return r.json()
 
 
-lottie_streamlit = load_lottiefile("./lottiefiles/Streamlit Logo Animation.json")
+lottie_streamlit = load_lottiefile("./Streamlit Logo Animation.json")
 lottie_progress_url = "https://assets5.lottiefiles.com/private_files/lf30_3ykigvxc.json"
 lottie_progress = load_lottieurl(lottie_progress_url)
 lottie_success_url = "https://assets7.lottiefiles.com/packages/lf20_TsKMbf.json"
